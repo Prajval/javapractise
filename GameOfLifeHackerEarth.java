@@ -18,15 +18,18 @@ public class GameOfLifeHackerEarth {
     {
         Scanner sc = new Scanner(System.in);
         int m = 0,n,s;
-        int[][] a = new int[30][1000];
-        int[][] b = new int[30][1000];
+        //int[][] a = new int[30][1000];
+        //int[][] b = new int[30][1000];
         String[] ss = new String[30];
         
         n = sc.nextInt();  
         //System.out.printf("n = %d\n",n);
         s = sc.nextInt();
         //System.out.printf("s = %d\n",s);
-        
+
+		int[][] a = new int[s+2][1000];
+		int[][] b = new int[s+2][1000];
+
         String temp = sc.nextLine();
         
         for(int i=0;i<s;i++)
